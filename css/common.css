@@ -1,0 +1,966 @@
+/* 头部导航样式 */
+#header {
+    width: 100%;
+    height: 80px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#header .container {
+    height: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#header .container .logo {
+    width: 181px;
+    height: 48px;
+}
+
+#header .container .layui-nav {
+    padding: 0 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+}
+
+#header .container .layui-nav .layui-nav-item {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#header .container .layui-nav .layui-nav-item a {
+    font-size: 16px;
+    padding: 0;
+    color: #2b262c;
+}
+
+#header .container .layui-nav .layui-this:after,
+#header .container .layui-nav .layui-nav-bar,
+#header .container .layui-nav .layui-nav-tree .layui-nav-itemed:after {
+    background: #3f5599;
+}
+
+#header .container .search {
+    width: 180px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#header .container .search #search {
+    width: 150px;
+    border: 0;
+    border-bottom: 1px solid #b0b0b0;
+    position: absolute;
+    left: -100%;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+
+#header .container i.iconfont {
+    font-size: 20px;
+    color: #b0b0b0;
+    cursor: pointer;
+}
+
+#header .container .user i {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#header .container .download {
+    height: 100%;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+#header .container .download:hover span {
+    color: #666;
+}
+
+#header .container .download span,
+#header .container .download i {
+    color: #999;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#header .container .download .code {
+    position: absolute;
+    top: 80px;
+    left: -10px;
+    overflow: hidden;
+    height: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+    z-index: 3;
+    width: 280px;
+    background: #fff;
+}
+
+#header .container .download:hover .code {
+    height: 102px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+#header .container .download .code .word {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#header .container .download .code .word h1 {
+    font-size: 16px;
+}
+
+#header .container .download .code .word .button-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 160px;
+    margin-top: 20px;
+}
+
+#header .container .download .code .word .button-box .iphone,
+#header .container .code .word .button-box .android {
+    padding: 8px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#header .container .download .code .img {
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+}
+
+#header .container .user {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #4495cd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+
+#header .container .contact {
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#header .container .contact i:last-child {
+    font-size: 20px;
+    color: #999;
+}
+
+#header .container .user .personal {
+    width: 160px;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    background: #fff;
+    z-index: 3;
+    overflow: hidden;
+    height: 0;
+    padding: 0 26px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+
+#header .container .user:hover {
+    border-radius: 5px;
+}
+
+#header .container .user:hover .personal {
+    -webkit-box-shadow: 0 0 5px 1px#eee;
+    box-shadow: 0 0 5px 1px#eee;
+    height: 320px;
+}
+
+#header .container .user .personal h1 {
+    color: #000;
+    font-size: 14px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#header .container .user .personal h1:first-child {
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+}
+
+#header .container .user .personal h1:last-child {
+    border-top: 1px solid #eee;
+}
+
+#header .container .user .personal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+#header .container .user .personal ul li a {
+    padding: 10px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#header .container .search:hover #search {
+    left: 0;
+}
+
+/* 页面统一背景颜色 */
+body {
+    width: 100%;
+    background: #f5f6fa;
+}
+
+/* 底部样式 */
+#footer {
+    width: 100%;
+}
+
+#footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#footer .container h4 {
+    width: 100%;
+    font-size: 14px;
+    color: #A3A3AC;
+    margin-top: 40px;
+}
+
+#footer .container .link {
+    width: 100%;
+    margin-top: 25px;
+}
+
+#footer .container .link a {
+    font-size: 12px;
+    line-height: 24px;
+    color: #999;
+    margin-right: 20px;
+}
+
+#footer .container .link a:hover {
+    color: #666;
+}
+
+#footer .container ul.nav {
+    width: 100%;
+    margin-top: 43px;
+    padding-top: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 1px solid #dedede;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#footer .container ul.nav li.item {
+    border-right: 1px solid #72727b;
+}
+
+#footer .container ul.nav li.item:last-child {
+    border: 0;
+}
+
+#footer .container ul.nav li.item a {
+    width: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+    color: #72727b;
+}
+
+#footer .container ul.nav li.item a:hover {
+    color: #999;
+}
+
+#footer .container p {
+    text-align: center;
+    font-size: 12px;
+    color: #a3a3ac;
+    line-height: 24px;
+    margin-top: 27px;
+}
+
+#footer .container .report {
+    width: 100%;
+    margin: 40px auto 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#footer .container .report a {
+    font-size: 12px;
+    color: #a3a3ac;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#footer .container .report a:hover {
+    color: #666;
+}
+
+#footer .container .report a i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* 返回顶部样式 */
+#backtop {
+    width: 48px;
+    height: 184px;
+    padding: 27px 13px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    border-radius: 4px;
+    z-index: 5;
+}
+
+#backtop i.iconfont {
+    font-size: 22px;
+    color: #ccc;
+    cursor: pointer;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+
+#backtop i.iconfont:hover,
+#backtop a:hover {
+    color: #3252A3;
+}
+
+#backtop .download {
+    width: 240px;
+    height: 340px;
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    background: #fff;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(7, 0, 1, 0.25);
+    box-shadow: 0px 2px 6px 0px rgba(7, 0, 1, 0.25);
+    border-right: 2px solid #3252A3;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+
+#backtop .download h1 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 25px;
+}
+
+#backtop .download .code {
+    width: 120px;
+    height: 120px;
+    margin-top: 14px;
+}
+
+#backtop .download h2 {
+    font-size: 14px;
+    color: #333;
+    margin-top: 11px;
+}
+
+#backtop .download .button-box {
+    width: 100%;
+    margin-top: 20px;
+    background: #F5F6FA;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 16px 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#backtop .download .button-box h1 {
+    color: #999;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+}
+
+#backtop .download .button-box .apple,
+#backtop .download .button-box .android {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#backtop .download .button-box .apple i,
+#backtop .download .button-box .android i {
+    font-size: 28px;
+    color: #ccc;
+}
+
+#backtop .download .button-box .apple p,
+#backtop .download .button-box .android p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+#backtop .download i.in {
+    position: absolute;
+    top: 55%;
+    right: -20px;
+    color: #3252A3;
+    font-size: 20px;
+}
+
+#backtop .wechat-code {
+    width: 160px;
+    height: 160px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    background: #fff;
+}
+
+#backtop .wechat-code h1 {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#backtop .wechat-code .code {
+    width: 120px;
+    height: 120px;
+}
+
+#backtop .wechat-code i.in {
+    position: absolute;
+    top: 35%;
+    right: -20px;
+    color: #3252A3;
+    font-size: 20px;
+}
+
+/* 登录注册弹窗样式 */
+#login {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#login .login ,#login .enroll,#login .forgetpass{
+    width: 460px;
+    height: 600px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#login .login .logo,#login .enroll .logo,#login .forgetpass .logo{
+    width: 140px;
+    height: 36px;
+}
+#login .login .nav{
+    width: 268px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 54px;
+    font-weight: 400;
+}
+#login .login .nav span{
+    color: #999;
+    font-size: 16px;
+    cursor: pointer;
+}
+#login .login .nav span.active{
+    color: #3A529D;
+}
+#login .login .nav span:hover{
+    color: #3a529d;
+}
+#login .login .quick,#login .login .account{
+    width: 360px;
+}
+#login .login .account{
+    display: none;
+}
+#login .login label{
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+#login .login label i{
+    font-size: 28px;
+    color: #999;
+}
+#login .login label input{
+    width: 342px;
+    height: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border: 0;
+}
+#login .login label span{
+    background: none;
+    border: 0;
+    color: #999;
+    cursor: pointer;
+}
+#login .login .quick .code input{
+    width: 260px;
+}
+#login .login .button-box{
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#login .login .button-box .signin,#login .login .button-box .register{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #579ED5;
+    color: #579ED5;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#login .login .button-box div:hover{
+    background: #579ed5;
+    color: #fff;
+}
+#login .login .button-box .register{
+    margin-top: 10px;
+}
+#login .login .gam{
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 46px;
+}
+#login .login .gam a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login .login .account a.forget{
+    float: right;
+    margin-top: 20px;
+    color: #999;
+}
+#login .enroll{
+    display:none;
+}
+#login .forgetpass{
+    display: none;
+}
+#login .enroll input,#login .forgetpass input{
+    margin-top: 30px;
+    border: 0;
+    border-bottom: 1px solid #dedede;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    width: 360px;
+}
+#login .enroll .phone{
+    margin-top: 42px;
+}
+#login .forgetpass .phone{
+    margin-top: 60px;
+}
+#login .enroll .code ,#login .forgetpass .code{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dedede;
+    margin-top: 35px;
+}
+#login .enroll .code input ,#login .forgetpass .code input{
+    width: 240px;
+    border: 0;
+    margin-top:0;
+}
+#login .enroll .code span ,#login .forgetpass .code span{
+    color:#999;
+    cursor: pointer;
+}
+#login .enroll .agreement{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+#login .enroll .agreement input{
+    width: 12px;
+    height: 12px;
+    margin-top: 0;
+}
+#login .enroll .agreement span{
+    font-size: 12px;
+    color: #999;
+}
+#login .enroll .agreement a{
+    color: #579ED5;
+}
+#login .enroll .button,#login .forgetpass .button{
+    width: 360px;
+    height: 48px;
+    background: #fff;
+    color: #579ED5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid #579ED5;
+}
+#login .forgetpass .button{
+    margin-top: 80px;
+}
+#login .enroll .button:hover,#login .forgetpass .button:hover{
+    color: #fff;
+    background: #579ED5;
+}
+#login .enroll .sign,#login .forgetpass a{
+    width: 360px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login .enroll .sign span{
+    font-size: 14px;
+    color: #999;
+}
+#login .enroll .sign a,#login .forgetpass a{
+    color: #3A529D;
+}
+/* 协议弹出框样式 */
+.protocol{
+    display: none;
+}
+.layui-layer.agree{
+    border-radius: 8px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.layui-layer.agree .layui-layer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.layui-layer.agree .layui-layer-content .logo{
+    width: 140px;
+    height: 36px;
+}
+.layui-layer.agree .layui-layer-content h1{
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+}
+.layui-layer.agree .layui-layer-content .content{
+    width: 100%;
+    height: 430px;
+    margin-top: 33px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #666;
+    overflow: auto;
+}
+.layui-layer.agree .layui-layer-iframe .layui-layer-btn, .layui-layer.agree.layui-layer-page .layui-layer-btn {
+    height: 30px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+}
+.layui-layer.agree .layui-layer-iframe .layui-layer-btn a, .layui-layer.agree.layui-layer-page .layui-layer-btn a{
+    background: #3A529D;
+    border: 0;
+}
+#login i.off{
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+    top:10px;
+    cursor: pointer;
+}
