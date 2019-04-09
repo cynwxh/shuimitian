@@ -1,0 +1,371 @@
+#goodsinfo {
+    width: 100%;
+    background: #fff;
+}
+
+#goodsinfo .container {
+    padding: 40px 0 60px;
+    box-sizing: border-box;
+}
+
+#goodsinfo .img {
+    width: 600px;
+    height: 600px;
+    background: #eee;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#goodsinfo .img .simg {
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#goodsinfo .img .simg:hover,
+#goodsinfo .img .simg.active {
+    border: 1px solid #579ED5;
+}
+
+#goodsinfo .word {
+    width: 600px;
+    height: 600px;
+    padding: 60px 40px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#goodsinfo .word h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+#goodsinfo .word .evaluate {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+#goodsinfo .word .evaluate span {
+    font-size: 14px;
+    color: #999;
+    margin-right: 30px;
+}
+
+#goodsinfo .word .spec {
+    width: 560px;
+    height: 180px;
+    border: 1px solid #dedede;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+#goodsinfo .word .spec h1 {
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    background: #fff;
+}
+
+#goodsinfo .word .spec .color,
+#goodsinfo .word .spec .size {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+#goodsinfo .word .spec .number,#goodsinfo .word .spec .number .num{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#goodsinfo .word .spec .number .num .add,#goodsinfo .word .spec .number .num .reduce{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#goodsinfo .word .spec .number .num{
+    margin-left: 10px;
+}
+#goodsinfo .word .spec .number .num span{
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    box-sizing: border-box;
+}
+
+#goodsinfo .word .spec .color span,
+#goodsinfo .word .spec .size span,
+#goodsinfo .word .spec .number span {
+    width: 70px;
+    font-size: 12px;
+    color: #999;
+}
+#goodsinfo .word .spec .color .button,#goodsinfo .word .spec .size .button{
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+#goodsinfo .word .spec .color .button.active,#goodsinfo .word .spec .color .button:hover,#goodsinfo .word .spec .size .button.active,#goodsinfo .word .spec .size .button:hover{
+    color: #fff;
+    background: #9DCCED;
+    border-color:#fff;
+}
+
+#goodsinfo .word .price{
+    width: 560px;
+    height: 80px;
+    background: #f5f6fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px 20px 20px;
+    box-sizing: border-box;
+    margin-top: 35px;
+}
+#goodsinfo .word .price .single{
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#goodsinfo .word .price .single span{
+    font-size: 24px;
+    color: #EA534C;
+}
+#goodsinfo .word .price .stock-express{
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#goodsinfo .word .price .stock-express span{
+    font-size: 14px;
+    color: #999;
+}
+#goodsinfo .word .button-box{
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#goodsinfo .word .button-box .buy,#goodsinfo .word .button-box .cart{
+    width: 200px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+#goodsinfo .word .button-box .buy{
+    background: #F5F6FA;
+    color: #579ED5;
+    border: 1px solid #579ED5;
+    box-sizing: border-box;    
+}#goodsinfo .word .button-box .cart{
+    background: #579ED5;
+    color:#fff;
+    margin-left:10px;
+}
+
+
+.container{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#details {
+    width: 900px;
+    margin-top: 40px;
+}
+#details .nav{
+    width: 900px;
+    height: 58px;
+    border-bottom: 2px solid #eee;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+#details .nav a{
+    line-height: 58px;
+    font-size: 16px;
+    color: #333;
+    margin-right: 76px;
+    cursor: pointer;
+}
+#details .nav a.active{
+    border-bottom: 2px solid #9DCCEC;
+}
+#details #content{
+    width: 900px;
+    background: #fff;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+#details #price{
+    width: 900px;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+#details #evaluate{
+    width: 900px;
+    padding: 0 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+#details #evaluate li{
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+}
+#details #evaluate li a{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+#details #evaluate li a .head{
+    width: 40px;
+}
+#details #evaluate li a .head .img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#details #evaluate li a .head h1{
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+#details #evaluate li a .content{
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#details #evaluate li a .content h2{
+    font-size: 14px;
+    color: #333;
+    margin-top: 12px;
+}
+#details #evaluate li a .content span{
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+}
+
+#other-goods{
+    margin-top: 40px;
+    width: 280px;
+    background: #fff;
+}
+#other-goods .title{
+    height: 58px;
+    border-left: 0;
+    border-bottom: 1px solid #eee;
+    padding-left: 17px;
+}
+#other-goods .title h1{
+    line-height: 59px;
+    font-size: 16px;
+    color: #333;
+    border: 0;
+    font-weight: 400;
+    border-bottom: 2px solid #9DCCEC;
+    padding: 0;
+}
+#other-goods ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+#other-goods ul li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+#other-goods ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+#other-goods ul li a .img{
+    width: 60px;
+    height: 60px;
+    border: 1px sold #eee;
+}
+#other-goods ul li a .word{
+    width: 165px;
+}
+#other-goods ul li a .word h1{
+    font-size: 14px;
+    color: #666;
+}
+#other-goods ul li a .word span{
+    font-size: 18px;
+    color: #2B262C;
+}
+#other-goods .button{
+    width: 240px;
+    height: 40px;
+    border-radius: 2px;
+    background:#9CCCED;
+    color: #fff;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+

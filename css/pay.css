@@ -1,0 +1,820 @@
+#course,#shop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#course .img,#shop .img {
+    width: 458px;
+    height: 32px;
+    margin: 24px 0;
+}
+
+#course .orderinfo,#shop .orderinfo {
+    width: 100%;
+    background: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#course .orderinfo .title,#shop .orderinfo .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #dedede;
+}
+
+#course .orderinfo .title span,#shop .orderinfo .title span {
+    font-size: 14px;
+    color: #333;
+}
+
+#course .orderinfo .content,#shop .orderinfo .content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#course .orderinfo .content .info,#shop .orderinfo .content .info {
+    width: 520px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#course .orderinfo .content .info .img,#shop .orderinfo .content .info .img {
+    width: 80px;
+    height: 80px;
+}
+
+#course .orderinfo .content .info .word,#shop .orderinfo .content .info .word {
+    height: 60px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#course .orderinfo .content .info .word h1,#shop .orderinfo .content .info .word h1 {
+    font-size: 14px;
+    color: #333;
+}
+
+#course .orderinfo .content .info .word span,#shop .orderinfo .content .info .word span {
+    font-size: 12px;
+    color: #999;
+}
+
+#course .orderinfo .content .number,#shop .orderinfo .content .number {
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 36px 0 0 60px;
+}
+
+#course .orderinfo .content .money,#shop .orderinfo .content .money {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 36px 0 0 100px;
+}
+
+#course .pay {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #fff;
+    margin-top: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#course .pay .total {
+    width: 240px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#course .pay .total p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#course .pay .total p span {
+    font-size: 14px;
+    color: #666;
+}
+
+#course .pay .button-box {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#course .pay .button-box p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#course .pay .button-box p span:last-child {
+    font-size: 24px;
+    color: #D03434;
+}
+
+#course .pay .button-box .button {
+    width: 200px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 2px;
+    background: #579ED5;
+}
+
+#time {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 26px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+#time h1 {
+    font-size: 14px;
+    color: #455494;
+}
+
+#time .recharge {
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+#time .recharge .time {
+    width: 166px;
+    height: 100px;
+    border: 1px solid #dedede;
+    padding: 18px 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#time .recharge .time.active {
+    border-color: #9DCBEC;
+}
+
+#time .recharge .time h1,
+#time .recharge .time h2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+}
+
+#time .recharge .time h1 i {
+    font-size: 20px;
+}
+
+#time .recharge .time h1 span.num {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+#time .recharge .time h1 span:last-child {
+    font-size: 12px;
+    color: #999;
+}
+
+#time .recharge .time h2 span {
+    font-size: 12px;
+    color: #579ED5;
+}
+
+#time .recharge .time h2 span i {
+    font-size: 14px;
+    color: #455494;
+}
+
+#time .recharge .time h2 span:last-child {
+    color: #455494;
+}
+
+#time h2 {
+    font-size: 14px;
+    color: #333;
+    margin-top: 50px;
+}
+
+#time .pay-method {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#time .pay-method .pay {
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+#time .pay-method .pay .radio {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+#time .pay-method .pay img {
+    max-width: 85%;
+    max-height: 100%;
+    margin-left: 10px;
+}
+
+#time .pay-method .pay.active .radio {
+    border: 2px solid #5B94C8;
+}
+
+#time .button {
+    width: 200px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #579ED5;
+    color: #fff;
+    margin: 46px 0 90px;
+    border-radius: 2px;
+}
+#shop .orderinfo .title .shopinfo{
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#shop .orderinfo .title span{
+    width: 21.33%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#shop .orderinfo .content .info{
+    width: 35%;
+}
+#shop .orderinfo .content .number,#shop .orderinfo .content .money,#shop .orderinfo .content .freight{
+    width: 21.33%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 36px 0 0;
+}
+#shop .pay {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #fff;
+    padding: 35px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+#shop .pay .address{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#shop .pay .address h1{
+    font-size: 16px;
+    color: #333;
+}
+#shop .pay .address .receiver,#shop .pay .address .contact,#shop .pay .address .collect{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+#shop .pay .address p{
+    font-size: 14px;
+    color: #999;
+    margin-top: 40px;
+}
+#shop .pay .address .receiver p span{
+    margin-left: 20px;
+}
+#shop .pay .address p span{
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+}
+#shop .pay .address .receiver .modify,#shop .pay .address .receiver .switch{
+    padding: 6px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9CCBEC;
+    border: 1px solid #9CCBEC;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#shop .pay .button-box{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#shop .pay .button-box p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom:16px;
+}
+#shop .pay .button-box p span{
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 130px;
+}
+#shop .pay .button-box .line{
+    width: 100%;
+    height: 1px;
+    background: #9DCBED;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+#shop .pay .button-box p span.money{
+    font-size: 24px;
+    color: #D03434;
+}
+#shop .pay .button-box .button{
+    width: 200px;
+    height: 48px;
+    background: #579ED5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin-left: 200px;
+}
+
+.layui-layer #modify{
+    padding: 80px 180px 0;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.layui-layer #modify h1{
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 74px;
+}
+.layui-layer #modify label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 26px;
+    color: #999;
+    margin-bottom: 37px;
+}
+.layui-layer #modify label select{
+    width: 272px;
+    height: 45px;
+    padding-left:10px;
+    margin-right: 16px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    font-size: 22px;
+}
+.layui-layer #modify label textarea{
+    width: 846px;
+    height: 112px;
+    padding: 10px;
+}
+.layui-layer #modify label input{
+    width: 300px;
+    height: 50px;
+    border: 1px solid #eee;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-right: 100px;
+}
+.layui-layer #modify label:last-child{
+    align-items: center;
+}
+.layui-layer #modify label input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+}
+.layui-layer-page .layui-layer-btn{
+    position: absolute;
+    bottom: 93px;
+    right: 220px;
+}
+.layui-layer-page .layui-layer-btn .layui-layer-btn0,.layui-layer-page .layui-layer-btn .layui-layer-btn1{
+    width: 240px;
+    height: 64px;
+    border: 1px solid #4495CD;
+    border-radius: 3px;
+    margin-left: 32px;
+    background: #fff;
+    color: #4495CD;
+    text-align: center;
+    line-height: 64px;
+    font-size: 26px;
+}
+.layui-layer #switch{
+    padding: 92px 112px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.layui-layer #switch h1{
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 58px;
+}
+.layui-layer #switch table{
+    width: 100%;
+    height: 100%;
+}
+.layui-layer #switch table thead tr td{
+    height: 64px;
+    background: #F5F6FA;
+}
+.layui-layer #switch table tbody tr td{
+    height: 128px;
+}
+.layui-layer #switch table tbody tr:hover td,.layui-layer #switch table tbody tr.active td{
+    background: #FAFBFF;
+}
+.layui-layer #switch table tbody tr td .select{
+    border: 1px solid #579ED5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #579ED5;
+    width: 115px;
+    height: 38px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.layui-layer #switch table tbody tr td .select.active{
+    border: 0;
+    background: #579ED5;
+    color: #fff;
+}
+#pay-method{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#pay-method .img{
+    width: 458px;
+    height: 32px;
+    margin: 24px 0;
+}
+#pay-method .pay-box{
+    width: 100%;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+}
+#pay-method .pay-box h1{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+#pay-method .pay-box h2{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#pay-method .pay-box h2 .number,#pay-method .pay-box h2 .money{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#pay-method .pay-box h2 .number span:first-child{
+    font-size: 14px;
+    color: #999;
+}
+#pay-method .pay-box h2 .number span:last-child{
+    font-size: 14px;
+    color: #333;
+}
+#pay-method .pay-box h2 .money span:first-child{
+    font-size: 16px;
+    color: #333;
+}
+#pay-method .pay-box h2 .money span:last-child{
+    font-size: 24px;
+    color: #D03434;
+}
+#pay-method .pay-box .pay-method{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 34px;
+    background: #f5f6fa;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+#pay-method .pay-box .pay-method .pay{
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 50px;
+}
+#pay-method .pay-box .pay-method .pay .radio{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+#pay-method .pay-box .pay-method .pay.active .radio{
+    border: 2px solid #5B94C8;
+}
+#pay-method .pay-box .pay-method .pay img{
+    max-width: 85%;
+    max-height: 100%;
+    margin-left: 10px;
+}
+#pay-method .pay-box a.button{
+    width: 200px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #579ED5;
+    color: #fff;
+    margin: 46px 0 0 940px;
+    border-radius: 2px;
+}
+
+#wxpay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    margin-top: 40px;
+}
+#wxpay .order{
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #F5F6FA;
+}
+#wxpay .order h1{
+    font-size: 16px;
+    color:#333;
+}
+#wxpay .order h2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#wxpay .order h2 .number,#wxpay .order h2 .money{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#wxpay .order h2 .number span:first-child{
+    font-size: 14px;
+    color: #999;
+}
+#wxpay .order h2 .number span:last-child{
+    font-size: 14px;
+    color: #333;
+}
+#wxpay .order h2 .money span:first-child{
+    font-size: 16px;
+    color: #333;
+}
+#wxpay .order h2 .money span:last-child{
+    font-size: 24px;
+    color: #D03434;
+}
+#wxpay .wxpay {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+#wxpay .wxpay .code{
+    width: 140px;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#wxpay .wxpay .code .img{
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+#wxpay .wxpay .code .img img{
+    width: 120px;
+    height: 120px;
+}
+#wxpay .wxpay .code p{
+    font-size: 16px;
+    color: #333;
+    margin-top: 16px;
+}
+#wxpay .wxpay .wxphone{
+    width: 280px;
+    height: 350px;
+    margin-left: 122px;
+}
+#wxpay a{
+    font-size: 14px;
+    color: #579ED5;
+}
+
+.yue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#yuepay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.yue .img{
+    width: 458px;
+    height: 32px;
+    margin: 24px 0;
+}
+#yuepay .order{
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#yuepay .order .img{
+    width: 46px;
+    height: 46px;
+}
+#yuepay .order .word{
+    width: 1065px;
+}
+#yuepay .order .word h1{
+    font-size: 16px;
+    color:#333;
+}
+#yuepay .order .word h2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#yuepay .order .word h2 .number,#yuepay .order .word h2 .money{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#yuepay .order .word h2 .number span:first-child{
+    font-size: 14px;
+    color: #999;
+}
+#yuepay .order .word h2 .number span:last-child{
+    font-size: 14px;
+    color: #333;
+}
+#yuepay .order .word h2 .money span:first-child{
+    font-size: 16px;
+    color: #333;
+}
+#yuepay .order .word h2 .money span:last-child{
+    font-size: 24px;
+    color: #D03434;
+}
+#yuepay .yuepay {
+    width: 100%;
+    background: #F5F6FA;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+#yuepay .yuepay h1{
+    font-size: 14px;
+    color: #333;
+}
+#yuepay .yuepay label{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#yuepay .yuepay label input {
+    width: 216px;
+    height: 36px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #F5F6FA;
+    margin-right: 24px;
+    box-sizing: border-box;
+}
+#yuepay .yuepay label a{
+    font-size: 14px;
+    color: #3B519C;
+}
+#yuepay .yuepay span{
+    font-size: 12px;
+    color: #999;
+}
+#yuepay a.button{
+    width: 160px;
+    height: 40px;
+    background: #579ED5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}

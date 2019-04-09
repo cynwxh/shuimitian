@@ -1,0 +1,220 @@
+#store .msg{
+    width:100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    background: #FFFAE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    overflow: hidden;
+}
+#store .msg .container {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#store .msg .container span{
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#store .msg .container span i{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D76C41;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#store .msg .container span.off{
+    font-size:24px;
+    color: #666;
+    cursor: pointer;
+}
+#store {
+    width: 100%;
+    height: 520px;
+    background: #fff;
+    position: relative;
+}
+#store .container{
+    padding: 80px 0 56px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#store .container .swiper-container {
+    width: 600px;
+    height: 384px;
+    margin:0;
+}
+#store .container .info {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#store .container .info h1{
+    width: 100%;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+}
+#store .container .info .desc{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+#store .container .info .address{
+    width: 100%;
+    padding: 18px 15px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #dedede;
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#store .container .info .address h1{
+    font-size:14px;
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 51px;
+    background: #fff;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#store .container .info .address i{
+    font-size: 12px;
+    color: #3B529C;
+}
+#store .container .info .address p{
+    font-size: 14px;
+    color: #333;
+}
+#store .container .info .button-box{
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#store .container .info .button-box .pay,#store .container .info .button-box .other{
+    width: 200px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+#store .container .info .button-box .pay{
+    background: #579ED5;
+    color: #fff;
+}
+#store .container .info .button-box .other {
+    background: #fff;
+    color: #579ED5;
+    border: 1px solid #579ED5;
+}
+#store .container .info .button-box .other:hover {
+    background: #579ED5;
+    color: #fff;
+}
+.container #content{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 20px 70px;
+    background: #fff;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.container #content h1{
+    font-size: 20px;
+    color: #579ED5;
+    border-top: 4px solid #579ED5;
+    padding: 20px 0;
+    margin-bottom:30px;
+    box-sizing: border-box;
+}
+#nearby{
+    width: 280px;
+    padding: 0 20px 50px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 620px;
+    right: 18.75%;
+    background: #fff;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#nearby p{
+    font-size: 16px;
+    height: 60px;
+    color: #579ED5;
+    border-top: 4px solid #579ED5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nearby .img{
+    width: 240px;
+    height: 135px;
+}
+#nearby h1{
+    font-size: 14px;
+    color: #2B262C;
+    margin-top: 10px;
+}
+#nearby h1:hover{
+    color: #333;
+}
+#nearby span{
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+#nearby ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 23px;
+    border-top: 1px solid #dedede;
+}
+#nearby ul li {
+    width: 100%;
+    margin-top:10px;
+}
+#nearby ul li a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

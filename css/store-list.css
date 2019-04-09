@@ -1,0 +1,60 @@
+#main .container {
+    flex-direction: column;
+    margin-top: 40px;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 30px;
+}
+#store-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#store-list li{
+    width: 560px;
+    height: 134px;
+    margin-bottom: 16px;
+}
+#store-list li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#store-list li a .img{
+    width: 210px;
+    height: 134px;
+}
+#store-list li a .word{
+    width: 350px;
+    height: 134px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 21px 23px;
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    transition: 0.5s;
+}
+#store-list li:hover a .word{
+    border-color: #9DCCED;
+}
+#store-list li a .word h1{
+    font-size: 16px;
+    color: #2B262C;
+}
+#store-list li a .word p{
+    font-size: 12px;
+    color: #999999;
+}
+#store-list li a .word p i {
+    font-size: 12px;
+    color: #5A94C8;
+}
+#store-list li a .word span{
+    font-size: 12px;
+    color: #5A94C8;
+}

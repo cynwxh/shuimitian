@@ -1,0 +1,216 @@
+#t-header,.t-body,#t-footer{
+    width: 1200px;
+    margin: 20px auto 0;
+    font-size: 14px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 13px 20px;
+    box-sizing: border-box;
+}
+#t-header{
+    height: 50px;
+    margin-top: 40px;
+}
+#t-header .allcheck{
+    width: 140px;
+    padding-left: 7px;
+    box-sizing: border-box;
+}
+#t-header .goods-info,.t-body .goods-info{
+    width: 360px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+#t-header .goods-onemoney,.t-body .goods-onemoney{
+    width: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#t-header .goods-number,.t-body .goods-number{
+    width: 220px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#t-header .goods-allmoney,.t-body .goods-allmoney{
+    width: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.t-body{
+    height: 120px;
+    background: #ffffff;
+    position: relative;
+}
+.t-body .line{
+    width: 0;
+    height: 2px;
+    background: #579ED5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.8s;
+}
+.t-body:hover .line{
+    width: 100%;
+}
+#t-footer{
+    margin-top: 10px;
+    height: 90px;
+}
+.goods-img{
+    margin: 0 26px;
+    width: 90px;
+    height: 90px;
+}
+.t-body .goods-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.t-body .goods-info .goods-title{
+    font-size: 14px;
+    color:#333;
+}
+.t-body .goods-info .goods-desc{
+    font-size: 12px;
+    color:#999;
+    margin-top: 20px;
+}
+.t-body .goods-onemoney{
+    height: 100%;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.t-body .goods-number{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.t-body .goods-number .reduce,.t-body .goods-number .add{
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    border: 1px solid #dedede;
+}
+.t-body .goods-number .goods-num{
+    min-width: 56px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+.t-body .goods-allmoney{
+    height: 100%;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.t-body .goods-op{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.t-body .goods-op .shoucang{
+    font-size: 14px;
+    color:#5A93C8;
+}
+.t-body .goods-op .del{
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.reduce,.add,button,.goods-op p{
+    cursor: pointer;
+}
+#t-footer #select{
+    width: 160px;
+    font-size: 14px;
+    color: #333;
+}
+#t-footer .button{
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+#t-footer .button:hover{
+    color: #5A93C8;
+}
+#t-footer .goods-money{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+#t-footer .goods-money h1,#t-footer .goods-money h2{
+    font-size: 14px;
+    color: #999;
+}
+#t-footer .goods-money h1 span,#t-footer .goods-money h2 span{
+    font-size: 14px;
+    color: #999;
+    margin-left: 54px;
+}
+#t-footer .goods-price{
+    width: 240px;
+    margin-left: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-left: 1px solid #000;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#t-footer .goods-price span{
+    font-size: 14px;
+    color: #333;
+}
+#t-footer .goods-price .price{
+    font-size: 24px;
+    color: #D03434;
+}
+#t-footer a{
+    width: 180px;
+    height: 64px;
+    background: #579ED5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}

@@ -349,7 +349,26 @@ $("#login .enroll .code span.send").on("click", function () {
 		return false;
 	}
 })
-// 点击叉号关闭弹窗
+// 点击叉号关闭登录注册弹窗
 $("#login .off").on("click", function () {
 	$("#login").css("display", "none");
+})
+
+// 课程详情其他课程浮窗
+$(window).on("scroll", function () {
+	var height = document.documentElement.scrollTop||document.body.scrollTop;
+	$("#other").css("top",180-height+"px");
+	if (height>140) {
+		$("#other").css("top","40px");
+	}
+})
+ // 线上课程默认显示课程列表
+ $(function() {
+	$("#main .container .introduce-catalog .content div").eq(1).show().siblings().hide()
+})
+// 点击课程介绍或课程目录
+$("#main .container .introduce-catalog .nav span").on("click", function() {
+	$("#main .container .introduce-catalog .nav span").removeClass("active");
+	$(this).addClass("active");
+	$("#main .container .introduce-catalog .content div").eq($(this).index()).show().siblings().hide()
 })

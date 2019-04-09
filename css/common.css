@@ -9,6 +9,7 @@
     -ms-flex-align: center;
     align-items: center;
     background: #fff;
+    border-bottom: 1px solid #dedede;
 }
 
 .container {
@@ -963,4 +964,276 @@ body {
     right: 15px;
     top:10px;
     cursor: pointer;
+}
+
+
+/* 分页样式 */
+#page{
+    width: 100%;
+    margin-top: 20px;
+    display:  flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#page i{
+    color: #999;
+}
+#page a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    color: #666;
+    border-radius: 4px;
+}
+#page a.active{
+    background: #579ED5;
+    color: #fff;
+}
+
+
+/* 页面内导航样式 */
+#nav {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #dedede;
+}
+
+#nav .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#main #nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#main #nav .container .title .desc {
+    margin-left: 0;
+}
+
+.container .title {
+    width: 100%;
+    height: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.container .title h1 {
+    font-size: 24px;
+    color: #2b262c;
+    font-weight: 700;
+    padding-left: 17px;
+    border-left: 4px solid #3f5599;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container .title .desc {
+    width: 910px;
+    margin-left: 84px;
+    font-size: 14px;
+    color: #999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.container .title .desc span {
+    font-size: 14px;
+    color: #2b262c;
+    margin-right: 44px;
+    cursor: pointer;
+}
+
+.container .title .desc span:hover {
+    color: #666;
+}
+
+.container .title a {
+    font-size: 14px;
+    color: #666;
+}
+
+.container .title a:hover ,.container .title a.active{
+    color: #569ED4;
+}
+
+
+/* 其他课程悬浮窗样式 */
+#other{
+    width: 280px;
+    padding: 0 20px 50px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 180px;
+    right: 18.75%;
+    background: #fff;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#other p{
+    font-size: 16px;
+    height: 60px;
+    color: #579ED5;
+    border-top: 4px solid #579ED5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#other .img{
+    width: 240px;
+    height: 135px;
+}
+#other h1{
+    font-size: 14px;
+    color: #2B262C;
+    margin-top: 10px;
+}
+#other h1:hover{
+    color: #333;
+}
+#other span{
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+#other ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 23px;
+    border-top: 1px solid #dedede;
+}
+#other ul li {
+    width: 100%;
+    margin-top:10px;
+}
+#other ul li a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+/* 评分样式 */
+.layui-rate{
+    padding: 0;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.layui-rate .layui-inline{
+    border: 0 !important;
+}
+.layui-rate li i.layui-icon{
+    font-size: 15px;
+    color: #9CCCED;
+    border:0;
+}
+
+/* 确认支付弹出层 */
+#paypop{
+    display: none;
+}
+.layui-layer #paypop{
+    width: 100%;
+    padding: 100px 230px;
+    box-sizing: border-box;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction: column;
+}
+.layui-layer #paypop h1{
+    font-size: 38px;
+    color: #333;
+}
+.layui-layer #paypop h2{
+    font-size: 26px;
+    color: #ff0000;
+    margin-top: 40px;    
+}
+.layui-layer #paypop .pay{
+    display: flex;
+    width: 560px;
+    margin-top: 77px;
+    justify-content: space-between;
+    align-items: center;
+}
+.layui-layer #paypop .pay .success,.layui-layer #paypop .pay .error{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction: column;
+}
+.layui-layer #paypop .pay .success h1,.layui-layer #paypop .pay .error h1{
+    font-size: 22px;
+    color: #333;
+}
+.layui-layer #paypop .pay .success .button-s{
+    width: 256px;
+    height: 70px;
+    background: #579ED5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 32px;
+}
+.layui-layer #paypop .pay .error .button-e{
+    width: 256px;
+    height: 70px;
+    background: #9CCBEC;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 32px;
+}
+.layui-layer #paypop a{
+    margin-top: 56px;
+    font-size: 22px;
+    color: #666;
 }
